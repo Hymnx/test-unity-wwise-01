@@ -9,7 +9,7 @@
 [Tt]emp/
 [Uu]nityGenerated/
 
-/test-01_WwiseProject/.cache/
+/test-01_WwiseProject/.cache/*
 /test-01_WwiseProject/Originals/SFX/*.akd
 
 # file on crash reports
