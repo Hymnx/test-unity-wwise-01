@@ -66,7 +66,7 @@ MonoBehaviour:
     ParentPath: SoundBanks\Default Work Unit
     guid: 16f939b5f34acb40a4a03aee370d8ffa
     GuidInternal: 
-    m_lastTime: -8585289179408115583
+    m_lastTime: -8585288878487137653
     List:
     - name: Main
       guid: fe0ec6dad639e84cb791b4ccd9c58047
@@ -94,8 +94,25 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: ab442ad2d4c54c43878a7b18e20860a2
     GuidInternal: 
-    m_lastTime: -8585289181401234559
-    List: []
+    m_lastTime: -8585288878487097642
+    List:
+    - name: Play_11_01_Rivers_And_Streams__Brook
+      guid: ed0fa2eefee0a141996d7d911d5e56c7
+      id: 1253004383
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: ab442ad2d4c54c43878a7b18e20860a2
+      - ElementName: Play_11_01_Rivers_And_Streams__Brook
+        ObjectType: 3
+        guid: ed0fa2eefee0a141996d7d911d5e56c7
+      Path: Events\Default Work Unit\Play_11_01_Rivers_And_Streams__Brook
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
   RtpcWwu:
   - PhysicalPath: Game Parameters\Default Work Unit.wwu
     PathAndIcons:
@@ -153,7 +170,7 @@ MonoBehaviour:
     m_lastTime: -8585289181400704454
     List: []
   ExpandedFileSystemItemIds: 
-  ExpandedWaapiItemIds: 0a0000000b000000
+  ExpandedWaapiItemIds: 0a0000000b0000000c000000
   AutoSyncSelection: 0
   autoPopulateEnabled: 1
   currentDataSource: 0

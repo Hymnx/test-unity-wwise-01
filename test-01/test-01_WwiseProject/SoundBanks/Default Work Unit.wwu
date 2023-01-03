@@ -4,7 +4,9 @@
 		<WorkUnit Name="Default Work Unit" ID="{B539F916-4AF3-40CB-A4A0-3AEE370D8FFA}" PersistMode="Standalone">
 			<ChildrenList>
 				<SoundBank Name="Main" ID="{DAC60EFE-39D6-4CE8-B791-B4CCD9C58047}">
-					<ObjectInclusionList/>
+					<ObjectInclusionList>
+						<ObjectRef Name="Play_11_01_Rivers_And_Streams__Brook" ID="{EEA20FED-E0FE-41A1-996D-7D911D5E56C7}" WorkUnitID="{D22A44AB-C5D4-434C-878A-7B18E20860A2}" Origin="Manual" Filter="7"/>
+					</ObjectInclusionList>
 					<ObjectExclusionList/>
 					<GameSyncExclusionList/>
 				</SoundBank>

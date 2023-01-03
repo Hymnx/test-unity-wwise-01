@@ -1,6 +1,47 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{C877165D-FAF3-4B1E-8101-E9258901A088}" SchemaVersion="110">
 	<AudioObjects>
-		<WorkUnit Name="Default Work Unit" ID="{C877165D-FAF3-4B1E-8101-E9258901A088}" PersistMode="Standalone"/>
+		<WorkUnit Name="Default Work Unit" ID="{C877165D-FAF3-4B1E-8101-E9258901A088}" PersistMode="Standalone">
+			<ChildrenList>
+				<Sound Name="11-01 Rivers And Streams, Brook" ID="{107B28B4-A4D2-4661-9F5A-96B3BBABB2FF}" ShortID="156811079">
+					<PropertyList>
+						<Property Name="3DSpatialization" Type="int16" Value="1"/>
+						<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+						<Property Name="Volume" Type="Real64">
+							<ValueList>
+								<Value>-31</Value>
+							</ValueList>
+						</Property>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9EBCA382-2CAD-498C-8175-12C1551169CA}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B7A374FD-1356-4EA7-B35E-949698905E99}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="11-01 Rivers And Streams, Brook" ID="{88D9B4B4-2608-4B14-BD53-7FDC9AC7EC3E}">
+							<PropertyList>
+								<Property Name="FadeInDuration" Type="Real64" Value="3.82462015503876"/>
+								<Property Name="FadeOutDuration" Type="Real64" Value="0.95615503875969"/>
+								<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+								<Property Name="TrimBegin" Type="Real64" Value="15.7765581395349"/>
+								<Property Name="TrimEnd" Type="Real64" Value="36.8119689922481"/>
+							</PropertyList>
+							<Language>SFX</Language>
+							<AudioFile>11-01 Rivers And Streams, Brook.wav</AudioFile>
+							<MediaIDList>
+								<MediaID ID="560110634"/>
+							</MediaIDList>
+						</AudioFileSource>
+					</ChildrenList>
+					<ActiveSourceList>
+						<ActiveSource Name="11-01 Rivers And Streams, Brook" ID="{88D9B4B4-2608-4B14-BD53-7FDC9AC7EC3E}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+			</ChildrenList>
+		</WorkUnit>
 	</AudioObjects>
 </WwiseDocument>
