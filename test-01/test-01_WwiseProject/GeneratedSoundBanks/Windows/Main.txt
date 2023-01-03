@@ -2,5 +2,5 @@ Event	ID	Name			Wwise Object Path	Notes
 	1253004383	Play_11_01_Rivers_And_Streams__Brook			\Default Work Unit\Play_11_01_Rivers_And_Streams__Brook	
 
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
-	560110634	11-01 Rivers And Streams, Brook	E:\Github\Projects\test-unity-wwise-01\test-01\test-01_WwiseProject\.cache\Windows\SFX\11-01 Rivers And Streams, Brook_29D716E8.wem		\Actor-Mixer Hierarchy\Default Work Unit\11-01 Rivers And Streams, Brook		3710744
+	560110634	11-01 Rivers And Streams, Brook	E:\Github\Projects\test-unity-wwise-01\test-01\test-01_WwiseProject\.cache\Windows\SFX\11-01 Rivers And Streams, Brook_ADB90DBD.wem		\Actor-Mixer Hierarchy\Default Work Unit\11-01 Rivers And Streams, Brook		3710744
 

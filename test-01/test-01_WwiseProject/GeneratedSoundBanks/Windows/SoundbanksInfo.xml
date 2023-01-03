@@ -22,17 +22,17 @@
 				<Bus Id="3803692087" Name="Master Audio Bus"/>
 			</Busses>
 		</SoundBank>
-		<SoundBank Id="3161908922" Type="User" Language="SFX" Hash="{ECAB50D6-C54A-188E-CE75-88106FF71811}">
+		<SoundBank Id="3161908922" Type="User" Language="SFX" Hash="{6C8AFC2D-6AB5-5E06-9433-87517E9912BC}">
 			<ShortName>Main</ShortName>
 			<Path>Main.bnk</Path>
 			<Media>
 				<File Id="560110634" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>11-01 Rivers And Streams, Brook.wav</ShortName>
-					<CachePath>SFX/11-01 Rivers And Streams, Brook_29D716E8.wem</CachePath>
+					<CachePath>SFX/11-01 Rivers And Streams, Brook_ADB90DBD.wem</CachePath>
 				</File>
 			</Media>
 			<Events>
-				<Event Id="1253004383" Name="Play_11_01_Rivers_And_Streams__Brook" DurationType="Infinite">
+				<Event Id="1253004383" Name="Play_11_01_Rivers_And_Streams__Brook" MaxAttenuation="20" DurationType="Infinite">
 					<MediaRefs>
 						<MediaRef Id="560110634"/>
 					</MediaRefs>
@@ -40,5 +40,5 @@
 			</Events>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{F68EF98D-D263-6CEA-0199-2C261D66A6E3}</FileHash>
+	<FileHash>{826B74D6-A92D-93A7-970E-A151ADD88A88}</FileHash>
 </SoundBanksInfo>

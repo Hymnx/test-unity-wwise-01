@@ -9,11 +9,14 @@
 						<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
 						<Property Name="Volume" Type="Real64">
 							<ValueList>
-								<Value>-31</Value>
+								<Value>-18</Value>
 							</ValueList>
 						</Property>
 					</PropertyList>
 					<ReferenceList>
+						<Reference Name="Attenuation">
+							<ObjectRef Name="Box Attenuation" ID="{8AC7AE10-40A6-4551-AA31-B41E2FBC5F46}" WorkUnitID="{D321E7B3-60AA-4443-A1B4-E52FC2E3B4BE}"/>
+						</Reference>
 						<Reference Name="Conversion">
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9EBCA382-2CAD-498C-8175-12C1551169CA}"/>
 						</Reference>
