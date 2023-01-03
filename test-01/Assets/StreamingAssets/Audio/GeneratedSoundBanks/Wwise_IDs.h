@@ -13,10 +13,38 @@ namespace AK
 {
     namespace EVENTS
     {
-        static const AkUniqueID PLAY_FOOTSTEPS_CEMENT = 3116569186U;
+        static const AkUniqueID PLAY_FOOTSTEPS = 3854155799U;
+        static const AkUniqueID PLAY_JUMPS = 827134157U;
+        static const AkUniqueID PLAY_LANDING = 2323405115U;
         static const AkUniqueID PLAY_SFX_WATER_BOX = 3289425441U;
         static const AkUniqueID STOP_SFX_WATER_BOX = 999815867U;
     } // namespace EVENTS
+
+    namespace SWITCHES
+    {
+        namespace FOOTSTEP
+        {
+            static const AkUniqueID GROUP = 1866025847U;
+
+            namespace SWITCH
+            {
+                static const AkUniqueID CEMENT = 3725073853U;
+                static const AkUniqueID SNOW = 787898836U;
+            } // namespace SWITCH
+        } // namespace FOOTSTEP
+
+        namespace LANDING
+        {
+            static const AkUniqueID GROUP = 2548270042U;
+
+            namespace SWITCH
+            {
+                static const AkUniqueID CEMENT = 3725073853U;
+                static const AkUniqueID SNOW = 787898836U;
+            } // namespace SWITCH
+        } // namespace LANDING
+
+    } // namespace SWITCHES
 
     namespace BANKS
     {

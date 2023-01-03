@@ -66,7 +66,7 @@ MonoBehaviour:
     ParentPath: SoundBanks\Default Work Unit
     guid: 16f939b5f34acb40a4a03aee370d8ffa
     GuidInternal: 
-    m_lastTime: -8585288819417451488
+    m_lastTime: -8585288279301172188
     List:
     - name: Main
       guid: fe0ec6dad639e84cb791b4ccd9c58047
@@ -94,8 +94,136 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: ab442ad2d4c54c43878a7b18e20860a2
     GuidInternal: 
-    m_lastTime: -8585288818804246056
+    m_lastTime: -8585288279301041647
     List:
+    - name: Box
+      guid: 1836fc202d260042a56304bb86d34b81
+      id: 546945280
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: ab442ad2d4c54c43878a7b18e20860a2
+      - ElementName: Box
+        ObjectType: 4
+        guid: 1836fc202d260042a56304bb86d34b81
+      Path: Events\Default Work Unit\Box
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Footsteps
+      guid: c8477130c96b5246961c56ffa6d1d87a
+      id: 2385628198
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: ab442ad2d4c54c43878a7b18e20860a2
+      - ElementName: Footsteps
+        ObjectType: 4
+        guid: c8477130c96b5246961c56ffa6d1d87a
+      Path: Events\Default Work Unit\Footsteps
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Jumping
+      guid: 776523b46da963439171fd9eb9918a73
+      id: 68157183
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: ab442ad2d4c54c43878a7b18e20860a2
+      - ElementName: Jumping
+        ObjectType: 4
+        guid: 776523b46da963439171fd9eb9918a73
+      Path: Events\Default Work Unit\Jumping
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Landing
+      guid: 419c4612f58ca14395da5f4073182114
+      id: 2548270042
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: ab442ad2d4c54c43878a7b18e20860a2
+      - ElementName: Landing
+        ObjectType: 4
+        guid: 419c4612f58ca14395da5f4073182114
+      Path: Events\Default Work Unit\Landing
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Play_Footsteps
+      guid: 955562abf61ac446a7ad8309ae9d52fd
+      id: 3854155799
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: ab442ad2d4c54c43878a7b18e20860a2
+      - ElementName: Footsteps
+        ObjectType: 4
+        guid: c8477130c96b5246961c56ffa6d1d87a
+      - ElementName: Play_Footsteps
+        ObjectType: 3
+        guid: 955562abf61ac446a7ad8309ae9d52fd
+      Path: Events\Default Work Unit\Footsteps\Play_Footsteps
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Play_Jumps
+      guid: befa8d09daf86d4ba0efac5cea4bca33
+      id: 827134157
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: ab442ad2d4c54c43878a7b18e20860a2
+      - ElementName: Jumping
+        ObjectType: 4
+        guid: 776523b46da963439171fd9eb9918a73
+      - ElementName: Play_Jumps
+        ObjectType: 3
+        guid: befa8d09daf86d4ba0efac5cea4bca33
+      Path: Events\Default Work Unit\Jumping\Play_Jumps
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Play_Landing
+      guid: 55fc6173ec6289408da71e14801c1209
+      id: 2323405115
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: ab442ad2d4c54c43878a7b18e20860a2
+      - ElementName: Landing
+        ObjectType: 4
+        guid: 419c4612f58ca14395da5f4073182114
+      - ElementName: Play_Landing
+        ObjectType: 3
+        guid: 55fc6173ec6289408da71e14801c1209
+      Path: Events\Default Work Unit\Landing\Play_Landing
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
     - name: Play_sfx_water_box
       guid: ed0fa2eefee0a141996d7d911d5e56c7
       id: 3289425441
@@ -106,10 +234,13 @@ MonoBehaviour:
       - ElementName: Default Work Unit
         ObjectType: 12
         guid: ab442ad2d4c54c43878a7b18e20860a2
+      - ElementName: Box
+        ObjectType: 4
+        guid: 1836fc202d260042a56304bb86d34b81
       - ElementName: Play_sfx_water_box
         ObjectType: 3
         guid: ed0fa2eefee0a141996d7d911d5e56c7
-      Path: Events\Default Work Unit\Play_sfx_water_box
+      Path: Events\Default Work Unit\Box\Play_sfx_water_box
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
@@ -123,10 +254,13 @@ MonoBehaviour:
       - ElementName: Default Work Unit
         ObjectType: 12
         guid: ab442ad2d4c54c43878a7b18e20860a2
+      - ElementName: Box
+        ObjectType: 4
+        guid: 1836fc202d260042a56304bb86d34b81
       - ElementName: Stop_sfx_water_box
         ObjectType: 3
         guid: 7816c8c0e544364fa8a5e9dea7ecc1c7
-      Path: Events\Default Work Unit\Stop_sfx_water_box
+      Path: Events\Default Work Unit\Box\Stop_sfx_water_box
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
@@ -170,8 +304,108 @@ MonoBehaviour:
     ParentPath: Switches\Default Work Unit
     guid: ae984b97e12e734c99b2a7c2883cc2e7
     GuidInternal: 
-    m_lastTime: -8585289181401074533
-    List: []
+    m_lastTime: -8585288279301081640
+    List:
+    - name: Footstep
+      guid: 517a2b046ec1f14a85da73d6e18b9960
+      id: 1866025847
+      PathAndIcons:
+      - ElementName: Switches
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: ae984b97e12e734c99b2a7c2883cc2e7
+      - ElementName: Footstep
+        ObjectType: 11
+        guid: 517a2b046ec1f14a85da73d6e18b9960
+      Path: Switches\Default Work Unit\Footstep
+      values:
+      - name: Cement
+        guid: 4aac3b09d1d2ea42ad7df0890bf5d50e
+        id: 3725073853
+        PathAndIcons:
+        - ElementName: Switches
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: ae984b97e12e734c99b2a7c2883cc2e7
+        - ElementName: Footstep
+          ObjectType: 11
+          guid: 517a2b046ec1f14a85da73d6e18b9960
+        - ElementName: Cement
+          ObjectType: 10
+          guid: 4aac3b09d1d2ea42ad7df0890bf5d50e
+      - name: Snow
+        guid: 218034ce0d0d7d48a05f048d96214417
+        id: 787898836
+        PathAndIcons:
+        - ElementName: Switches
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: ae984b97e12e734c99b2a7c2883cc2e7
+        - ElementName: Footstep
+          ObjectType: 11
+          guid: 517a2b046ec1f14a85da73d6e18b9960
+        - ElementName: Snow
+          ObjectType: 10
+          guid: 218034ce0d0d7d48a05f048d96214417
+      ValueGuids: []
+      ValueIcons: []
+      valuesInternal: []
+    - name: Landing
+      guid: 1e88c26aaf64754abd90dab6e83ea7ba
+      id: 2548270042
+      PathAndIcons:
+      - ElementName: Switches
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: ae984b97e12e734c99b2a7c2883cc2e7
+      - ElementName: Landing
+        ObjectType: 11
+        guid: 1e88c26aaf64754abd90dab6e83ea7ba
+      Path: Switches\Default Work Unit\Landing
+      values:
+      - name: Cement
+        guid: 7abf120ab199994b8069635a38c26b02
+        id: 3725073853
+        PathAndIcons:
+        - ElementName: Switches
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: ae984b97e12e734c99b2a7c2883cc2e7
+        - ElementName: Landing
+          ObjectType: 11
+          guid: 1e88c26aaf64754abd90dab6e83ea7ba
+        - ElementName: Cement
+          ObjectType: 10
+          guid: 7abf120ab199994b8069635a38c26b02
+      - name: Snow
+        guid: f2c57e9951ee2845bf52374805e17d50
+        id: 787898836
+        PathAndIcons:
+        - ElementName: Switches
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: ae984b97e12e734c99b2a7c2883cc2e7
+        - ElementName: Landing
+          ObjectType: 11
+          guid: 1e88c26aaf64754abd90dab6e83ea7ba
+        - ElementName: Snow
+          ObjectType: 10
+          guid: f2c57e9951ee2845bf52374805e17d50
+      ValueGuids: []
+      ValueIcons: []
+      valuesInternal: []
   TriggerWwu:
   - PhysicalPath: Triggers\Default Work Unit.wwu
     PathAndIcons:
@@ -187,7 +421,7 @@ MonoBehaviour:
     m_lastTime: -8585289181400704454
     List: []
   ExpandedFileSystemItemIds: 
-  ExpandedWaapiItemIds: 0100000006000000070000000a0000000b0000000c000000
+  ExpandedWaapiItemIds: 01000000050000000600000007000000090000000a0000000b0000000c00000010000000110000001200000017000000
   AutoSyncSelection: 0
   autoPopulateEnabled: 1
   currentDataSource: 0

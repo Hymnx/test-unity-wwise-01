@@ -33,6 +33,11 @@ namespace StarterAssets
 		[Tooltip("Time required to pass before entering the fall state. Useful for walking down stairs")]
 		public float FallTimeout = 0.15f;
 
+		[Header("Wwise Events")]
+		public AK.Wwise.Event myFootstep;
+		public AK.Wwise.Event myLanding;
+		public AK.Wwise.Event myJump;
+
 		[Header("Player Grounded")]
 		[Tooltip("If the character is grounded or not. Not part of the CharacterController built in grounded check")]
 		public bool Grounded = true;
@@ -59,6 +64,12 @@ namespace StarterAssets
 		private float _rotationVelocity;
 		private float _verticalVelocity;
 		private float _terminalVelocity = 53.0f;
+
+		//Wwise
+		private bool footstepIsPlaying = false;
+		private float lastFootStepTime = 0;
+		private bool isJumping = false;
+		private bool onAir = false;
 
 		// timeout deltatime
 		private float _jumpTimeoutDelta;
@@ -93,6 +104,7 @@ namespace StarterAssets
 			{
 				_mainCamera = GameObject.FindGameObjectWithTag("MainCamera");
 			}
+			lastFootStepTime = Time.time;
 		}
 
 		private void Start()
@@ -192,6 +204,37 @@ namespace StarterAssets
 			{
 				// move
 				inputDirection = transform.right * _input.move.x + transform.forward * _input.move.y;
+                if (!footstepIsPlaying)
+                {
+					myFootstep.Post(gameObject);
+					footstepIsPlaying = true;
+					lastFootStepTime = Time.time;
+				}
+                else
+                {	
+					if(_speed > 1)
+                    {
+						if (Time.time - lastFootStepTime > 800 / _speed * Time.deltaTime)
+						{
+							if (!Grounded)
+							{
+								onAir = true;
+								
+							}
+							if (Grounded)
+                            {
+                                if (onAir)
+                                {
+									myLanding.Post(gameObject);
+									onAir = false;
+								}
+								myFootstep.Post(gameObject);
+								footstepIsPlaying = false;
+							}
+						}
+					}
+					
+                }
 			}
 
 			// move the player
@@ -216,7 +259,24 @@ namespace StarterAssets
 				{
 					// the square root of H * -2 * G = how much velocity needed to reach desired height
 					_verticalVelocity = Mathf.Sqrt(JumpHeight * -2f * Gravity);
+                    if (!isJumping)
+                    {
+						myJump.Post(gameObject);
+					}
+					
+					isJumping = true;
+					
 				}
+                else
+                {
+
+                    if (isJumping)
+                    {
+						myLanding.Post(gameObject);
+                    }
+					
+					isJumping = false;
+                }
 
 				// jump timeout
 				if (_jumpTimeoutDelta >= 0.0f)
@@ -237,6 +297,8 @@ namespace StarterAssets
 
 				// if we are not grounded, do not jump
 				_input.jump = false;
+				
+
 			}
 
 			// apply gravity over time if under terminal (multiply by delta time twice to linearly speed up over time)

@@ -9,7 +9,7 @@
 	</RootPaths>
 	<DialogueEvents/>
 	<SoundBanks>
-		<SoundBank Id="1355168291" Type="User" Language="SFX" Hash="{4B35675E-A660-276F-5A47-E7E26E92F585}">
+		<SoundBank Id="1355168291" Type="User" Language="SFX" Hash="{986487A9-2683-E47A-8688-3D0FE6FDB954}">
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 			<Plugins>
@@ -21,60 +21,142 @@
 			<Busses>
 				<Bus Id="3803692087" Name="Master Audio Bus"/>
 			</Busses>
+			<SwitchGroups>
+				<SwitchGroup Id="1866025847" Name="Footstep">
+					<Switches>
+						<Switch Id="787898836" Name="Snow"/>
+						<Switch Id="3725073853" Name="Cement"/>
+					</Switches>
+				</SwitchGroup>
+				<SwitchGroup Id="2548270042" Name="Landing">
+					<Switches>
+						<Switch Id="787898836" Name="Snow"/>
+						<Switch Id="3725073853" Name="Cement"/>
+					</Switches>
+				</SwitchGroup>
+			</SwitchGroups>
 		</SoundBank>
-		<SoundBank Id="3161908922" Type="User" Language="SFX" Hash="{8867EBEB-C6E6-1D38-C655-2A9BF04056AD}">
+		<SoundBank Id="3161908922" Type="User" Language="SFX" Hash="{5F23921A-EAEF-E40F-02B6-D45D246E32F7}">
 			<ShortName>Main</ShortName>
 			<Path>Main.bnk</Path>
 			<Media>
+				<File Id="148890267" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>sfx_Player_Jump_03.wav</ShortName>
+					<CachePath>SFX/sfx_Player_Jump_03_10C4C929.wem</CachePath>
+				</File>
+				<File Id="328616771" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Boots on Snow\sfx_Player_Step_Snow_4.wav</ShortName>
+					<CachePath>SFX/Boots on Snow/sfx_Player_Step_Snow_4_2FEDEAC2.wem</CachePath>
+				</File>
 				<File Id="364425919" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Boots on cement\5.wav</ShortName>
-					<CachePath>SFX/Boots on cement/5_3B2BB30E.wem</CachePath>
+					<CachePath>SFX/Boots on cement/5_5A86A261.wem</CachePath>
+				</File>
+				<File Id="457165176" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Landing on Snow\sfx_Player_Landing_Snow_01.wav</ShortName>
+					<CachePath>SFX/Landing on Snow/sfx_Player_Landing_Snow_01_72AE9BAC.wem</CachePath>
+				</File>
+				<File Id="507470412" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Landing on Snow\sfx_Player_Landing_Snow_02.wav</ShortName>
+					<CachePath>SFX/Landing on Snow/sfx_Player_Landing_Snow_02_27794C0F.wem</CachePath>
 				</File>
 				<File Id="550675395" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Boots on cement\1.wav</ShortName>
-					<CachePath>SFX/Boots on cement/1_A96072E8.wem</CachePath>
+					<CachePath>SFX/Boots on cement/1_EB644E5C.wem</CachePath>
 				</File>
 				<File Id="560110634" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>11-01 Rivers And Streams, Brook.wav</ShortName>
 					<CachePath>SFX/11-01 Rivers And Streams, Brook_ADB90DBD.wem</CachePath>
 				</File>
+				<File Id="560244626" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Boots on Snow\sfx_Player_Step_Snow_2.wav</ShortName>
+					<CachePath>SFX/Boots on Snow/sfx_Player_Step_Snow_2_0D82BF36.wem</CachePath>
+				</File>
+				<File Id="662688635" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Boots on Snow\sfx_Player_Step_Snow_1.wav</ShortName>
+					<CachePath>SFX/Boots on Snow/sfx_Player_Step_Snow_1_D1E9AC30.wem</CachePath>
+				</File>
+				<File Id="706856954" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Boots on Snow\sfx_Player_Step_Snow_3.wav</ShortName>
+					<CachePath>SFX/Boots on Snow/sfx_Player_Step_Snow_3_8EA0925D.wem</CachePath>
+				</File>
+				<File Id="841126941" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>sfx_Landing_cement.wav</ShortName>
+					<CachePath>SFX/sfx_Landing_cement_2591184C.wem</CachePath>
+				</File>
+				<File Id="885012803" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>sfx_Player_Jump_01.wav</ShortName>
+					<CachePath>SFX/sfx_Player_Jump_01_10C4C929.wem</CachePath>
+				</File>
 				<File Id="889937497" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Boots on cement\6.wav</ShortName>
-					<CachePath>SFX/Boots on cement/6_33080905.wem</CachePath>
+					<CachePath>SFX/Boots on cement/6_2A2D6280.wem</CachePath>
 				</File>
 				<File Id="898366175" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Boots on cement\2.wav</ShortName>
-					<CachePath>SFX/Boots on cement/2_FAB0F983.wem</CachePath>
+					<CachePath>SFX/Boots on cement/2_C00110AC.wem</CachePath>
+				</File>
+				<File Id="955351840" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>sfx_Player_Jump_02.wav</ShortName>
+					<CachePath>SFX/sfx_Player_Jump_02_10C4C929.wem</CachePath>
 				</File>
 				<File Id="1032969002" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Boots on cement\4.wav</ShortName>
-					<CachePath>SFX/Boots on cement/4_847429EE.wem</CachePath>
+					<CachePath>SFX/Boots on cement/4_209F99AD.wem</CachePath>
 				</File>
 				<File Id="1070801123" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Boots on cement\3.wav</ShortName>
-					<CachePath>SFX/Boots on cement/3_2F58EA34.wem</CachePath>
+					<CachePath>SFX/Boots on cement/3_A840EB65.wem</CachePath>
 				</File>
 			</Media>
-			<Plugins>
-				<Custom>
-					<Plugin Id="611330617" Name="Parametric EQ (Custom)" LibName="Wwise Parametric EQ" LibId="6881283"/>
-				</Custom>
-			</Plugins>
 			<Events>
-				<Event Id="3116569186" Name="Play_Footsteps_cement" DurationType="OneShot" DurationMin="0.17168936" DurationMax="0.24949053">
+				<Event Id="3854155799" Name="Play_Footsteps" DurationType="OneShot" DurationMin="0.17168936" DurationMax="0.39825866">
+					<SwitchContainers>
+						<SwitchContainer>
+							<SwitchValue GroupType="Switch" GroupId="1866025847" Id="787898836"/>
+							<MediaRefs>
+								<MediaRef Id="328616771"/>
+								<MediaRef Id="560244626"/>
+								<MediaRef Id="662688635"/>
+								<MediaRef Id="706856954"/>
+							</MediaRefs>
+						</SwitchContainer>
+						<SwitchContainer>
+							<SwitchValue GroupType="Switch" GroupId="1866025847" Id="3725073853" Default="true"/>
+							<MediaRefs>
+								<MediaRef Id="364425919"/>
+								<MediaRef Id="550675395"/>
+								<MediaRef Id="889937497"/>
+								<MediaRef Id="898366175"/>
+								<MediaRef Id="1032969002"/>
+								<MediaRef Id="1070801123"/>
+							</MediaRefs>
+						</SwitchContainer>
+					</SwitchContainers>
+				</Event>
+				<Event Id="827134157" Name="Play_Jumps" DurationType="OneShot" DurationMin="0.46154195" DurationMax="0.5769161">
 					<MediaRefs>
-						<MediaRef Id="364425919"/>
-						<MediaRef Id="550675395"/>
-						<MediaRef Id="889937497"/>
-						<MediaRef Id="898366175"/>
-						<MediaRef Id="1032969002"/>
-						<MediaRef Id="1070801123"/>
+						<MediaRef Id="148890267"/>
+						<MediaRef Id="885012803"/>
+						<MediaRef Id="955351840"/>
 					</MediaRefs>
-					<PluginRefs>
-						<Custom>
-							<PluginRef Id="611330617"/>
-						</Custom>
-					</PluginRefs>
+				</Event>
+				<Event Id="2323405115" Name="Play_Landing" DurationType="OneShot" DurationMin="0.24897908" DurationMax="0.40733317">
+					<SwitchContainers>
+						<SwitchContainer>
+							<SwitchValue GroupType="Switch" GroupId="2548270042" Id="3725073853" Default="true"/>
+							<MediaRefs>
+								<MediaRef Id="841126941"/>
+							</MediaRefs>
+						</SwitchContainer>
+						<SwitchContainer>
+							<SwitchValue GroupType="Switch" GroupId="2548270042" Id="787898836"/>
+							<MediaRefs>
+								<MediaRef Id="457165176"/>
+								<MediaRef Id="507470412"/>
+							</MediaRefs>
+						</SwitchContainer>
+					</SwitchContainers>
 				</Event>
 				<Event Id="3289425441" Name="Play_sfx_water_box" MaxAttenuation="9" DurationType="Infinite">
 					<MediaRefs>
@@ -83,7 +165,21 @@
 				</Event>
 				<Event Id="999815867" Name="Stop_sfx_water_box" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
 			</Events>
+			<SwitchGroups>
+				<SwitchGroup Id="1866025847" Name="Footstep">
+					<Switches>
+						<Switch Id="787898836" Name="Snow"/>
+						<Switch Id="3725073853" Name="Cement"/>
+					</Switches>
+				</SwitchGroup>
+				<SwitchGroup Id="2548270042" Name="Landing">
+					<Switches>
+						<Switch Id="787898836" Name="Snow"/>
+						<Switch Id="3725073853" Name="Cement"/>
+					</Switches>
+				</SwitchGroup>
+			</SwitchGroups>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{0409F971-24B3-4D18-4FA7-E6776031BC90}</FileHash>
+	<FileHash>{9994AAEE-8D70-DD45-8668-3B9A031C81C8}</FileHash>
 </SoundBanksInfo>

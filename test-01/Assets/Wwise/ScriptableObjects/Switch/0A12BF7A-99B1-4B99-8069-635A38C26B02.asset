@@ -1,0 +1,18 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5b908f58575a5324080d49bda32069d6, type: 3}
+  m_Name: 0A12BF7A-99B1-4B99-8069-635A38C26B02
+  m_EditorClassIdentifier: 
+  objectName: Cement
+  id: 3725073853
+  guid: 0A12BF7A-99B1-4B99-8069-635A38C26B02
+  WwiseSwitchGroupReference: {fileID: 11400000, guid: 8e5f90aba073c8e478ca1161c757ac99, type: 2}

@@ -50,42 +50,624 @@
 				</Folder>
 				<Folder Name="Footsteps" ID="{192A71BA-CFC4-4C63-BA16-F2E650BF2419}" ShortID="54524665">
 					<ChildrenList>
-						<RandomSequenceContainer Name="Footsteps_Cement" ID="{A9783D5C-C732-407B-B222-73796D4B296B}" ShortID="369323167">
+						<SwitchContainer Name="Footsteps" ID="{C084292F-10EC-4107-935E-5F5FAE62793C}" ShortID="294501152">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9EBCA382-2CAD-498C-8175-12C1551169CA}"/>
+								</Reference>
+								<Reference Name="DefaultSwitchOrState">
+									<ObjectRef Name="Cement" ID="{093BAC4A-D2D1-42EA-AD7D-F0890BF5D50E}" WorkUnitID="{974B98AE-2EE1-4C73-99B2-A7C2883CC2E7}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B7A374FD-1356-4EA7-B35E-949698905E99}"/>
+								</Reference>
+								<Reference Name="SwitchGroupOrStateGroup">
+									<ObjectRef Name="Footstep" ID="{042B7A51-C16E-4AF1-85DA-73D6E18B9960}" WorkUnitID="{974B98AE-2EE1-4C73-99B2-A7C2883CC2E7}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<RandomSequenceContainer Name="Footsteps_Cement" ID="{A9783D5C-C732-407B-B222-73796D4B296B}" ShortID="369323167">
+									<PropertyList>
+										<Property Name="Pitch" Type="int32">
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{CBA953D2-E050-4316-9D04-F860C68AF4AB}">
+														<PropertyList>
+															<Property Name="Enabled" Type="bool" Value="True"/>
+															<Property Name="Max" Type="Real64" Value="75"/>
+															<Property Name="Min" Type="Real64" Value="-76"/>
+														</PropertyList>
+													</Modifier>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9EBCA382-2CAD-498C-8175-12C1551169CA}"/>
+										</Reference>
+										<Reference Name="Effect0">
+											<Custom>
+												<Effect Name="Parametric EQ (Custom)" ID="{2AF9B1B5-E54F-46DD-8034-BD683EF1A1DF}" ShortID="611330617" PluginName="Wwise Parametric EQ" CompanyID="0" PluginID="105" PluginType="3">
+													<PropertyList>
+														<Property Name="FrequencyBand3" Type="Real32" Value="702"/>
+														<Property Name="GainBand3" Type="Real32" Value="-2.5"/>
+													</PropertyList>
+												</Effect>
+											</Custom>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B7A374FD-1356-4EA7-B35E-949698905E99}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="sfx_step_cement_1" ID="{BBF816C5-7E0A-472E-AE88-E6B00DB46C89}" ShortID="711125959">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9EBCA382-2CAD-498C-8175-12C1551169CA}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B7A374FD-1356-4EA7-B35E-949698905E99}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="1" ID="{62AEA8AA-43D4-42C3-AB69-71EBC91D12B4}">
+													<PropertyList>
+														<Property Name="FadeInDuration" Type="Real64" Value="0.0209451739352072"/>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.0435659617852309"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimBegin" Type="Real64" Value="0.0938343792297281"/>
+														<Property Name="TrimEnd" Type="Real64" Value="0.312501995113291"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>Boots on cement\1.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="550675395"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="1" ID="{62AEA8AA-43D4-42C3-AB69-71EBC91D12B4}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="sfx_step_cement_2" ID="{17FE9EB2-23C1-49CE-8E18-21D6FA9D37F8}" ShortID="276395900">
+											<PropertyList>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>-8</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9EBCA382-2CAD-498C-8175-12C1551169CA}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B7A374FD-1356-4EA7-B35E-949698905E99}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="2" ID="{C0E2AFF2-2C39-415F-8A70-01E486853E70}">
+													<PropertyList>
+														<Property Name="FadeInDuration" Type="Real64" Value="0.041052540913006"/>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.0326744713389232"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimBegin" Type="Real64" Value="0.0854563096556453"/>
+														<Property Name="TrimEnd" Type="Real64" Value="0.324231292517007"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>Boots on cement\2.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="898366175"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="2" ID="{C0E2AFF2-2C39-415F-8A70-01E486853E70}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="sfx_step_cement_3" ID="{09B70638-545E-4211-AB23-A26495FDF192}" ShortID="673381162">
+											<PropertyList>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>-2</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9EBCA382-2CAD-498C-8175-12C1551169CA}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B7A374FD-1356-4EA7-B35E-949698905E99}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="3" ID="{CA31AF0D-D857-44D5-97B3-2BD080539B63}">
+													<PropertyList>
+														<Property Name="FadeInDuration" Type="Real64" Value="0.00754026261667457"/>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.0192695600203906"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimEnd" Type="Real64" Value="0.179290688885373"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>Boots on cement\3.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="1070801123"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="3" ID="{CA31AF0D-D857-44D5-97B3-2BD080539B63}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="sfx_step_cement_4" ID="{B2B5106F-CF03-4BB9-BD7E-C4AE2542F9F9}" ShortID="982381776">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9EBCA382-2CAD-498C-8175-12C1551169CA}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B7A374FD-1356-4EA7-B35E-949698905E99}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="4" ID="{2382AB97-1432-4150-97DC-C477ACA39A10}">
+													<PropertyList>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimBegin" Type="Real64" Value="0.0879697305278701"/>
+														<Property Name="TrimEnd" Type="Real64" Value="0.276476295944735"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>Boots on cement\4.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="1032969002"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="4" ID="{2382AB97-1432-4150-97DC-C477ACA39A10}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="sfx_step_cement_5" ID="{0713DFD3-1287-4DB6-86C0-3562B217215A}" ShortID="643956747">
+											<PropertyList>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>-3</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9EBCA382-2CAD-498C-8175-12C1551169CA}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B7A374FD-1356-4EA7-B35E-949698905E99}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="5" ID="{8185A109-D0CA-4677-B673-8699AC1E58C8}">
+													<PropertyList>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.0160999841797184"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimBegin" Type="Real64" Value="0.148477631879625"/>
+														<Property Name="TrimEnd" Type="Real64" Value="0.340782998470706"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>Boots on cement\5.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="364425919"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="5" ID="{8185A109-D0CA-4677-B673-8699AC1E58C8}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="sfx_step_cement_6" ID="{69EEAA2E-D6C5-4201-A4B7-62E4E56B3E4B}" ShortID="666086895">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9EBCA382-2CAD-498C-8175-12C1551169CA}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B7A374FD-1356-4EA7-B35E-949698905E99}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="6" ID="{40126BC2-1A83-419B-99DB-B6471E390ABA}">
+													<PropertyList>
+														<Property Name="FadeInDuration" Type="Real64" Value="0.0192695600203906"/>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.0268098226370652"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimBegin" Type="Real64" Value="0.141589375802"/>
+														<Property Name="TrimEnd" Type="Real64" Value="0.325906906431823"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>Boots on cement\6.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="889937497"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="6" ID="{40126BC2-1A83-419B-99DB-B6471E390ABA}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+								</RandomSequenceContainer>
+								<RandomSequenceContainer Name="Footsteps_Snow" ID="{CA6F22E0-2B67-4034-81C3-7342C11F061D}" ShortID="506722244">
+									<PropertyList>
+										<Property Name="Pitch" Type="int32">
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{A6FAD7F6-72B2-48B3-99B1-C3F2A979427D}">
+														<PropertyList>
+															<Property Name="Enabled" Type="bool" Value="True"/>
+															<Property Name="Max" Type="Real64" Value="152"/>
+															<Property Name="Min" Type="Real64" Value="-126"/>
+														</PropertyList>
+													</Modifier>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9EBCA382-2CAD-498C-8175-12C1551169CA}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B7A374FD-1356-4EA7-B35E-949698905E99}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="sfx_Player_Step_Snow_1" ID="{9328896A-5F92-4478-BD16-F9B9004D6B1E}" ShortID="730394548">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9EBCA382-2CAD-498C-8175-12C1551169CA}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B7A374FD-1356-4EA7-B35E-949698905E99}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="sfx_Player_Step_Snow_1" ID="{E85C36AD-5016-4317-8AD6-054342AB9D66}">
+													<PropertyList>
+														<Property Name="FadeInDuration" Type="Real64" Value="0.0531304118546644"/>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.0627904867373306"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimBegin" Type="Real64" Value="0.280142171597321"/>
+														<Property Name="TrimEnd" Type="Real64" Value="0.650445042099527"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>Boots on Snow\sfx_Player_Step_Snow_1.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="662688635"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="sfx_Player_Step_Snow_1" ID="{E85C36AD-5016-4317-8AD6-054342AB9D66}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="sfx_Player_Step_Snow_2" ID="{35FC9B01-58F9-40E1-A944-273A7975754F}" ShortID="289224558">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9EBCA382-2CAD-498C-8175-12C1551169CA}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B7A374FD-1356-4EA7-B35E-949698905E99}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="sfx_Player_Step_Snow_2" ID="{3686A9CC-3387-4F1D-88A7-2D9023608DC9}">
+													<PropertyList>
+														<Property Name="FadeInDuration" Type="Real64" Value="0.0354202745697762"/>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.0483003744133312"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimBegin" Type="Real64" Value="0.322002496088874"/>
+														<Property Name="TrimEnd" Type="Real64" Value="0.634344917295084"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>Boots on Snow\sfx_Player_Step_Snow_2.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="560244626"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="sfx_Player_Step_Snow_2" ID="{3686A9CC-3387-4F1D-88A7-2D9023608DC9}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="sfx_Player_Step_Snow_3" ID="{39772D0F-662D-4B28-BD96-97BB572162E9}" ShortID="895867159">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9EBCA382-2CAD-498C-8175-12C1551169CA}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B7A374FD-1356-4EA7-B35E-949698905E99}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="sfx_Player_Step_Snow_3" ID="{22B2C6D3-ED0D-4793-A75B-967E7112F25B}">
+													<PropertyList>
+														<Property Name="FadeInDuration" Type="Real64" Value="0.0627904867373306"/>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.0370302870502206"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimBegin" Type="Real64" Value="0.333272583451985"/>
+														<Property Name="TrimEnd" Type="Real64" Value="0.666545166903971"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>Boots on Snow\sfx_Player_Step_Snow_3.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="706856954"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="sfx_Player_Step_Snow_3" ID="{22B2C6D3-ED0D-4793-A75B-967E7112F25B}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="sfx_Player_Step_Snow_4" ID="{E6181007-5AC8-4586-AEFF-44D7B0C16DBD}" ShortID="989047152">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9EBCA382-2CAD-498C-8175-12C1551169CA}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B7A374FD-1356-4EA7-B35E-949698905E99}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="sfx_Player_Step_Snow_4" ID="{716373D0-4619-4EAC-AD3E-310739DB2959}">
+													<PropertyList>
+														<Property Name="FadeInDuration" Type="Real64" Value="0.0611804742568862"/>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.0338102620893319"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimBegin" Type="Real64" Value="0.262432034312433"/>
+														<Property Name="TrimEnd" Type="Real64" Value="0.574774455518641"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>Boots on Snow\sfx_Player_Step_Snow_4.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="328616771"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="sfx_Player_Step_Snow_4" ID="{716373D0-4619-4EAC-AD3E-310739DB2959}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+								</RandomSequenceContainer>
+							</ChildrenList>
+							<GroupingInfo>
+								<GroupingBehaviorList>
+									<GroupingBehavior>
+										<ItemRef Name="Footsteps_Cement" ID="{A9783D5C-C732-407B-B222-73796D4B296B}"/>
+									</GroupingBehavior>
+									<GroupingBehavior>
+										<ItemRef Name="Footsteps_Snow" ID="{CA6F22E0-2B67-4034-81C3-7342C11F061D}"/>
+									</GroupingBehavior>
+								</GroupingBehaviorList>
+								<GroupingList>
+									<Grouping>
+										<SwitchRef Name="Snow" ID="{CE348021-0D0D-487D-A05F-048D96214417}"/>
+										<ItemList>
+											<ItemRef Name="Footsteps_Snow" ID="{CA6F22E0-2B67-4034-81C3-7342C11F061D}"/>
+										</ItemList>
+									</Grouping>
+									<Grouping>
+										<SwitchRef Name="Cement" ID="{093BAC4A-D2D1-42EA-AD7D-F0890BF5D50E}"/>
+										<ItemList>
+											<ItemRef Name="Footsteps_Cement" ID="{A9783D5C-C732-407B-B222-73796D4B296B}"/>
+										</ItemList>
+									</Grouping>
+								</GroupingList>
+							</GroupingInfo>
+						</SwitchContainer>
+					</ChildrenList>
+				</Folder>
+				<Folder Name="Landing" ID="{4B78999E-0E31-4674-AE04-E4997BA7F24E}" ShortID="206192112">
+					<ChildrenList>
+						<SwitchContainer Name="Landing" ID="{CFFA2645-C48C-4952-B4D3-364B6271A264}" ShortID="925096955">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9EBCA382-2CAD-498C-8175-12C1551169CA}"/>
+								</Reference>
+								<Reference Name="DefaultSwitchOrState">
+									<ObjectRef Name="Cement" ID="{0A12BF7A-99B1-4B99-8069-635A38C26B02}" WorkUnitID="{974B98AE-2EE1-4C73-99B2-A7C2883CC2E7}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B7A374FD-1356-4EA7-B35E-949698905E99}"/>
+								</Reference>
+								<Reference Name="SwitchGroupOrStateGroup">
+									<ObjectRef Name="Landing" ID="{6AC2881E-64AF-4A75-BD90-DAB6E83EA7BA}" WorkUnitID="{974B98AE-2EE1-4C73-99B2-A7C2883CC2E7}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="sfx_Landing_cement" ID="{52A7F793-7E6F-4CB5-A31F-F5AE9BD0D4F6}" ShortID="843917085">
+									<PropertyList>
+										<Property Name="Lowpass" Type="int16">
+											<ValueList>
+												<Value>11</Value>
+											</ValueList>
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{4B734886-FAB3-4A94-B9D6-CB3D0050B2E7}">
+														<PropertyList>
+															<Property Name="Enabled" Type="bool" Value="True"/>
+															<Property Name="Max" Type="Real64" Value="10"/>
+															<Property Name="Min" Type="Real64" Value="-23"/>
+														</PropertyList>
+													</Modifier>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
+										<Property Name="Pitch" Type="int32">
+											<ValueList>
+												<Value>50</Value>
+											</ValueList>
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{CAFB99C0-EEE5-40A2-AA47-B1E6E7184F79}">
+														<PropertyList>
+															<Property Name="Enabled" Type="bool" Value="True"/>
+															<Property Name="Max" Type="Real64" Value="25"/>
+															<Property Name="Min" Type="Real64" Value="-51"/>
+														</PropertyList>
+													</Modifier>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>3</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9EBCA382-2CAD-498C-8175-12C1551169CA}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B7A374FD-1356-4EA7-B35E-949698905E99}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="sfx_Landing_cement" ID="{78DA7441-8D4A-4128-897E-FC8C0747E8F8}">
+											<PropertyList>
+												<Property Name="FadeInDuration" Type="Real64" Value="0.0223314876338132"/>
+												<Property Name="FadeOutDuration" Type="Real64" Value="0.0271168064124875"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimEnd" Type="Real64" Value="0.260002320307969"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>sfx_Landing_cement.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="841126941"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="sfx_Landing_cement" ID="{78DA7441-8D4A-4128-897E-FC8C0747E8F8}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<RandomSequenceContainer Name="Landing on Snow" ID="{FF355024-7BF9-4277-8312-32EDC43D41FC}" ShortID="65412632">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9EBCA382-2CAD-498C-8175-12C1551169CA}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B7A374FD-1356-4EA7-B35E-949698905E99}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="sfx_Player_Landing_Snow_01" ID="{57051B73-9E1A-4BA2-A798-479944897D13}" ShortID="601895503">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9EBCA382-2CAD-498C-8175-12C1551169CA}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B7A374FD-1356-4EA7-B35E-949698905E99}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="sfx_Player_Landing_Snow_01" ID="{6E53B0B6-982D-4DDC-ACD3-6AFC7BED1629}">
+													<PropertyList>
+														<Property Name="FadeInDuration" Type="Real64" Value="0.0402503120111094"/>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.0305902371284431"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimBegin" Type="Real64" Value="0.603754680166639"/>
+														<Property Name="TrimEnd" Type="Real64" Value="1.01108783771907"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>Landing on Snow\sfx_Player_Landing_Snow_01.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="457165176"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="sfx_Player_Landing_Snow_01" ID="{6E53B0B6-982D-4DDC-ACD3-6AFC7BED1629}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="sfx_Player_Landing_Snow_02" ID="{02538CC7-54DA-457C-BADF-F6855E312E04}" ShortID="607441115">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9EBCA382-2CAD-498C-8175-12C1551169CA}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B7A374FD-1356-4EA7-B35E-949698905E99}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="sfx_Player_Landing_Snow_02" ID="{C3C93DB7-EB06-4A2B-8303-CD14894A60BC}">
+													<PropertyList>
+														<Property Name="FadeInDuration" Type="Real64" Value="0.05152039937422"/>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.0450803494524424"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimBegin" Type="Real64" Value="0.626294854892861"/>
+														<Property Name="TrimEnd" Type="Real64" Value="0.990157675473291"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>Landing on Snow\sfx_Player_Landing_Snow_02.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="507470412"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="sfx_Player_Landing_Snow_02" ID="{C3C93DB7-EB06-4A2B-8303-CD14894A60BC}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+								</RandomSequenceContainer>
+							</ChildrenList>
+							<GroupingInfo>
+								<GroupingBehaviorList>
+									<GroupingBehavior>
+										<ItemRef Name="Landing on Snow" ID="{FF355024-7BF9-4277-8312-32EDC43D41FC}"/>
+									</GroupingBehavior>
+									<GroupingBehavior>
+										<ItemRef Name="sfx_Landing_cement" ID="{52A7F793-7E6F-4CB5-A31F-F5AE9BD0D4F6}"/>
+									</GroupingBehavior>
+								</GroupingBehaviorList>
+								<GroupingList>
+									<Grouping>
+										<SwitchRef Name="Cement" ID="{0A12BF7A-99B1-4B99-8069-635A38C26B02}"/>
+										<ItemList>
+											<ItemRef Name="sfx_Landing_cement" ID="{52A7F793-7E6F-4CB5-A31F-F5AE9BD0D4F6}"/>
+										</ItemList>
+									</Grouping>
+									<Grouping>
+										<SwitchRef Name="Snow" ID="{997EC5F2-EE51-4528-BF52-374805E17D50}"/>
+										<ItemList>
+											<ItemRef Name="Landing on Snow" ID="{FF355024-7BF9-4277-8312-32EDC43D41FC}"/>
+										</ItemList>
+									</Grouping>
+								</GroupingList>
+							</GroupingInfo>
+						</SwitchContainer>
+					</ChildrenList>
+				</Folder>
+				<Folder Name="Jumping" ID="{270894D8-E15F-4CEF-A9C3-DD99EBB6E273}" ShortID="51243919">
+					<ChildrenList>
+						<RandomSequenceContainer Name="Jumps" ID="{9C5E045F-35BF-4560-BF01-63EC3138FD3D}" ShortID="431946561">
 							<PropertyList>
-								<Property Name="Pitch" Type="int32">
-									<ModifierList>
-										<ModifierInfo>
-											<Modifier Name="" ID="{CBA953D2-E050-4316-9D04-F860C68AF4AB}">
-												<PropertyList>
-													<Property Name="Enabled" Type="bool" Value="True"/>
-													<Property Name="Max" Type="Real64" Value="75"/>
-													<Property Name="Min" Type="Real64" Value="-76"/>
-												</PropertyList>
-											</Modifier>
-										</ModifierInfo>
-									</ModifierList>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>5</Value>
+									</ValueList>
 								</Property>
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9EBCA382-2CAD-498C-8175-12C1551169CA}"/>
 								</Reference>
-								<Reference Name="Effect0">
-									<Custom>
-										<Effect Name="Parametric EQ (Custom)" ID="{2AF9B1B5-E54F-46DD-8034-BD683EF1A1DF}" ShortID="611330617" PluginName="Wwise Parametric EQ" CompanyID="0" PluginID="105" PluginType="3">
-											<PropertyList>
-												<Property Name="FrequencyBand3" Type="Real32" Value="702"/>
-												<Property Name="GainBand3" Type="Real32" Value="-2.5"/>
-											</PropertyList>
-										</Effect>
-									</Custom>
-								</Reference>
 								<Reference Name="OutputBus">
 									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B7A374FD-1356-4EA7-B35E-949698905E99}"/>
 								</Reference>
 							</ReferenceList>
 							<ChildrenList>
-								<Sound Name="sfx_step_cement_1" ID="{BBF816C5-7E0A-472E-AE88-E6B00DB46C89}" ShortID="711125959">
+								<Sound Name="sfx_Player_Jump_01" ID="{6764F488-9899-4F3D-B406-FF7F62E885F2}" ShortID="751046250">
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9EBCA382-2CAD-498C-8175-12C1551169CA}"/>
@@ -95,33 +677,19 @@
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
-										<AudioFileSource Name="1" ID="{62AEA8AA-43D4-42C3-AB69-71EBC91D12B4}">
-											<PropertyList>
-												<Property Name="FadeInDuration" Type="Real64" Value="0.0209451739352072"/>
-												<Property Name="FadeOutDuration" Type="Real64" Value="0.0435659617852309"/>
-												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
-												<Property Name="TrimBegin" Type="Real64" Value="0.0938343792297281"/>
-												<Property Name="TrimEnd" Type="Real64" Value="0.312501995113291"/>
-											</PropertyList>
+										<AudioFileSource Name="sfx_Player_Jump_01" ID="{F46831C4-D7E4-4DCB-AF91-76F026B70AA7}">
 											<Language>SFX</Language>
-											<AudioFile>Boots on cement\1.wav</AudioFile>
+											<AudioFile>sfx_Player_Jump_01.wav</AudioFile>
 											<MediaIDList>
-												<MediaID ID="550675395"/>
+												<MediaID ID="885012803"/>
 											</MediaIDList>
 										</AudioFileSource>
 									</ChildrenList>
 									<ActiveSourceList>
-										<ActiveSource Name="1" ID="{62AEA8AA-43D4-42C3-AB69-71EBC91D12B4}" Platform="Linked"/>
+										<ActiveSource Name="sfx_Player_Jump_01" ID="{F46831C4-D7E4-4DCB-AF91-76F026B70AA7}" Platform="Linked"/>
 									</ActiveSourceList>
 								</Sound>
-								<Sound Name="sfx_step_cement_2" ID="{17FE9EB2-23C1-49CE-8E18-21D6FA9D37F8}" ShortID="276395900">
-									<PropertyList>
-										<Property Name="Volume" Type="Real64">
-											<ValueList>
-												<Value>-8</Value>
-											</ValueList>
-										</Property>
-									</PropertyList>
+								<Sound Name="sfx_Player_Jump_02" ID="{BDD9F8B5-8109-4F90-BB0A-F7079367375B}" ShortID="618763528">
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9EBCA382-2CAD-498C-8175-12C1551169CA}"/>
@@ -131,33 +699,19 @@
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
-										<AudioFileSource Name="2" ID="{C0E2AFF2-2C39-415F-8A70-01E486853E70}">
-											<PropertyList>
-												<Property Name="FadeInDuration" Type="Real64" Value="0.041052540913006"/>
-												<Property Name="FadeOutDuration" Type="Real64" Value="0.0326744713389232"/>
-												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
-												<Property Name="TrimBegin" Type="Real64" Value="0.0854563096556453"/>
-												<Property Name="TrimEnd" Type="Real64" Value="0.324231292517007"/>
-											</PropertyList>
+										<AudioFileSource Name="sfx_Player_Jump_02" ID="{714A71A5-370D-4ED8-BB5D-3FA014A1E970}">
 											<Language>SFX</Language>
-											<AudioFile>Boots on cement\2.wav</AudioFile>
+											<AudioFile>sfx_Player_Jump_02.wav</AudioFile>
 											<MediaIDList>
-												<MediaID ID="898366175"/>
+												<MediaID ID="955351840"/>
 											</MediaIDList>
 										</AudioFileSource>
 									</ChildrenList>
 									<ActiveSourceList>
-										<ActiveSource Name="2" ID="{C0E2AFF2-2C39-415F-8A70-01E486853E70}" Platform="Linked"/>
+										<ActiveSource Name="sfx_Player_Jump_02" ID="{714A71A5-370D-4ED8-BB5D-3FA014A1E970}" Platform="Linked"/>
 									</ActiveSourceList>
 								</Sound>
-								<Sound Name="sfx_step_cement_3" ID="{09B70638-545E-4211-AB23-A26495FDF192}" ShortID="673381162">
-									<PropertyList>
-										<Property Name="Volume" Type="Real64">
-											<ValueList>
-												<Value>-2</Value>
-											</ValueList>
-										</Property>
-									</PropertyList>
+								<Sound Name="sfx_Player_Jump_03" ID="{2A77C640-0883-4390-919D-2EE4F92255A8}" ShortID="438938700">
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9EBCA382-2CAD-498C-8175-12C1551169CA}"/>
@@ -167,113 +721,16 @@
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
-										<AudioFileSource Name="3" ID="{CA31AF0D-D857-44D5-97B3-2BD080539B63}">
-											<PropertyList>
-												<Property Name="FadeInDuration" Type="Real64" Value="0.00754026261667457"/>
-												<Property Name="FadeOutDuration" Type="Real64" Value="0.0192695600203906"/>
-												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
-												<Property Name="TrimEnd" Type="Real64" Value="0.179290688885373"/>
-											</PropertyList>
+										<AudioFileSource Name="sfx_Player_Jump_03" ID="{A43C7E36-0D12-4147-96D2-98D46F8B9CF8}">
 											<Language>SFX</Language>
-											<AudioFile>Boots on cement\3.wav</AudioFile>
+											<AudioFile>sfx_Player_Jump_03.wav</AudioFile>
 											<MediaIDList>
-												<MediaID ID="1070801123"/>
+												<MediaID ID="148890267"/>
 											</MediaIDList>
 										</AudioFileSource>
 									</ChildrenList>
 									<ActiveSourceList>
-										<ActiveSource Name="3" ID="{CA31AF0D-D857-44D5-97B3-2BD080539B63}" Platform="Linked"/>
-									</ActiveSourceList>
-								</Sound>
-								<Sound Name="sfx_step_cement_4" ID="{B2B5106F-CF03-4BB9-BD7E-C4AE2542F9F9}" ShortID="982381776">
-									<ReferenceList>
-										<Reference Name="Conversion">
-											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9EBCA382-2CAD-498C-8175-12C1551169CA}"/>
-										</Reference>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B7A374FD-1356-4EA7-B35E-949698905E99}"/>
-										</Reference>
-									</ReferenceList>
-									<ChildrenList>
-										<AudioFileSource Name="4" ID="{2382AB97-1432-4150-97DC-C477ACA39A10}">
-											<PropertyList>
-												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
-												<Property Name="TrimBegin" Type="Real64" Value="0.0879697305278701"/>
-												<Property Name="TrimEnd" Type="Real64" Value="0.276476295944735"/>
-											</PropertyList>
-											<Language>SFX</Language>
-											<AudioFile>Boots on cement\4.wav</AudioFile>
-											<MediaIDList>
-												<MediaID ID="1032969002"/>
-											</MediaIDList>
-										</AudioFileSource>
-									</ChildrenList>
-									<ActiveSourceList>
-										<ActiveSource Name="4" ID="{2382AB97-1432-4150-97DC-C477ACA39A10}" Platform="Linked"/>
-									</ActiveSourceList>
-								</Sound>
-								<Sound Name="sfx_step_cement_5" ID="{0713DFD3-1287-4DB6-86C0-3562B217215A}" ShortID="643956747">
-									<PropertyList>
-										<Property Name="Volume" Type="Real64">
-											<ValueList>
-												<Value>-3</Value>
-											</ValueList>
-										</Property>
-									</PropertyList>
-									<ReferenceList>
-										<Reference Name="Conversion">
-											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9EBCA382-2CAD-498C-8175-12C1551169CA}"/>
-										</Reference>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B7A374FD-1356-4EA7-B35E-949698905E99}"/>
-										</Reference>
-									</ReferenceList>
-									<ChildrenList>
-										<AudioFileSource Name="5" ID="{8185A109-D0CA-4677-B673-8699AC1E58C8}">
-											<PropertyList>
-												<Property Name="FadeOutDuration" Type="Real64" Value="0.0160999841797184"/>
-												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
-												<Property Name="TrimBegin" Type="Real64" Value="0.148477631879625"/>
-												<Property Name="TrimEnd" Type="Real64" Value="0.340782998470706"/>
-											</PropertyList>
-											<Language>SFX</Language>
-											<AudioFile>Boots on cement\5.wav</AudioFile>
-											<MediaIDList>
-												<MediaID ID="364425919"/>
-											</MediaIDList>
-										</AudioFileSource>
-									</ChildrenList>
-									<ActiveSourceList>
-										<ActiveSource Name="5" ID="{8185A109-D0CA-4677-B673-8699AC1E58C8}" Platform="Linked"/>
-									</ActiveSourceList>
-								</Sound>
-								<Sound Name="sfx_step_cement_6" ID="{69EEAA2E-D6C5-4201-A4B7-62E4E56B3E4B}" ShortID="666086895">
-									<ReferenceList>
-										<Reference Name="Conversion">
-											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9EBCA382-2CAD-498C-8175-12C1551169CA}"/>
-										</Reference>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B7A374FD-1356-4EA7-B35E-949698905E99}"/>
-										</Reference>
-									</ReferenceList>
-									<ChildrenList>
-										<AudioFileSource Name="6" ID="{40126BC2-1A83-419B-99DB-B6471E390ABA}">
-											<PropertyList>
-												<Property Name="FadeInDuration" Type="Real64" Value="0.0192695600203906"/>
-												<Property Name="FadeOutDuration" Type="Real64" Value="0.0268098226370652"/>
-												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
-												<Property Name="TrimBegin" Type="Real64" Value="0.141589375802"/>
-												<Property Name="TrimEnd" Type="Real64" Value="0.325906906431823"/>
-											</PropertyList>
-											<Language>SFX</Language>
-											<AudioFile>Boots on cement\6.wav</AudioFile>
-											<MediaIDList>
-												<MediaID ID="889937497"/>
-											</MediaIDList>
-										</AudioFileSource>
-									</ChildrenList>
-									<ActiveSourceList>
-										<ActiveSource Name="6" ID="{40126BC2-1A83-419B-99DB-B6471E390ABA}" Platform="Linked"/>
+										<ActiveSource Name="sfx_Player_Jump_03" ID="{A43C7E36-0D12-4147-96D2-98D46F8B9CF8}" Platform="Linked"/>
 									</ActiveSourceList>
 								</Sound>
 							</ChildrenList>

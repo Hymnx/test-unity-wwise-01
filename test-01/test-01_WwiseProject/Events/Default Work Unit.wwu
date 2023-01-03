@@ -34,12 +34,42 @@
 				</Folder>
 				<Folder Name="Footsteps" ID="{307147C8-6BC9-4652-961C-56FFA6D1D87A}" ShortID="696928655">
 					<ChildrenList>
-						<Event Name="Play_Footsteps_cement" ID="{AABCB4E4-37A3-4137-9CB4-745CA3785FEC}">
+						<Event Name="Play_Footsteps" ID="{AB625595-1AF6-46C4-A7AD-8309AE9D52FD}">
 							<ChildrenList>
-								<Action Name="" ID="{E737E3BB-B03E-4252-924E-C1395D5CE3AF}" ShortID="592937325">
+								<Action Name="" ID="{F4D6A57C-2A23-4032-9650-23FC8ACD960A}" ShortID="541471338">
 									<ReferenceList>
 										<Reference Name="Target">
-											<ObjectRef Name="Footsteps_Cement" ID="{A9783D5C-C732-407B-B222-73796D4B296B}" WorkUnitID="{C877165D-FAF3-4B1E-8101-E9258901A088}"/>
+											<ObjectRef Name="Footsteps" ID="{C084292F-10EC-4107-935E-5F5FAE62793C}" WorkUnitID="{C877165D-FAF3-4B1E-8101-E9258901A088}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+					</ChildrenList>
+				</Folder>
+				<Folder Name="Landing" ID="{12469C41-8CF5-43A1-95DA-5F4073182114}" ShortID="396637703">
+					<ChildrenList>
+						<Event Name="Play_Landing" ID="{7361FC55-62EC-4089-8DA7-1E14801C1209}">
+							<ChildrenList>
+								<Action Name="" ID="{77C6C444-B5BC-4096-A6D8-08D3C4B30604}" ShortID="124549128">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Landing" ID="{CFFA2645-C48C-4952-B4D3-364B6271A264}" WorkUnitID="{C877165D-FAF3-4B1E-8101-E9258901A088}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+					</ChildrenList>
+				</Folder>
+				<Folder Name="Jumping" ID="{B4236577-A96D-4363-9171-FD9EB9918A73}" ShortID="918211286">
+					<ChildrenList>
+						<Event Name="Play_Jumps" ID="{098DFABE-F8DA-4B6D-A0EF-AC5CEA4BCA33}">
+							<ChildrenList>
+								<Action Name="" ID="{9205913E-93DF-4C8C-BEFB-DD3C7502B5EA}" ShortID="60188152">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Jumps" ID="{9C5E045F-35BF-4560-BF01-63EC3138FD3D}" WorkUnitID="{C877165D-FAF3-4B1E-8101-E9258901A088}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>

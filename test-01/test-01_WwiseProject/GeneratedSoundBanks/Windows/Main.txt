@@ -1,17 +1,36 @@
 Event	ID	Name			Wwise Object Path	Notes
+	827134157	Play_Jumps			\Default Work Unit\Jumping\Play_Jumps	
 	999815867	Stop_sfx_water_box			\Default Work Unit\Box\Stop_sfx_water_box	
-	3116569186	Play_Footsteps_cement			\Default Work Unit\Footsteps\Play_Footsteps_cement	
+	2323405115	Play_Landing			\Default Work Unit\Landing\Play_Landing	
 	3289425441	Play_sfx_water_box			\Default Work Unit\Box\Play_sfx_water_box	
+	3854155799	Play_Footsteps			\Default Work Unit\Footsteps\Play_Footsteps	
 
-Effect plug-ins	ID	Name	Type				Notes
-	611330617	Parametric EQ (Custom)	Wwise Parametric EQ			
+Switch Group	ID	Name			Wwise Object Path	Notes
+	1866025847	Footstep			\Default Work Unit\Footstep	
+	2548270042	Landing			\Default Work Unit\Landing	
+
+Switch	ID	Name	Switch Group			Notes
+	787898836	Snow	Footstep			
+	3725073853	Cement	Footstep			
+	787898836	Snow	Landing			
+	3725073853	Cement	Landing			
 
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
-	364425919	sfx_step_cement_5	E:\Github\Projects\test-unity-wwise-01\test-01\test-01_WwiseProject\.cache\Windows\SFX\Boots on cement\5_3B2BB30E.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\Footsteps_Cement\sfx_step_cement_5		34068
-	550675395	sfx_step_cement_1	E:\Github\Projects\test-unity-wwise-01\test-01\test-01_WwiseProject\.cache\Windows\SFX\Boots on cement\1_A96072E8.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\Footsteps_Cement\sfx_step_cement_1		38716
+	148890267	sfx_Player_Jump_03	E:\Github\Projects\test-unity-wwise-01\test-01\test-01_WwiseProject\.cache\Windows\SFX\sfx_Player_Jump_03_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Jumping\Jumps\sfx_Player_Jump_03		102008
+	328616771	sfx_Player_Step_Snow_4	E:\Github\Projects\test-unity-wwise-01\test-01\test-01_WwiseProject\.cache\Windows\SFX\Boots on Snow\sfx_Player_Step_Snow_4_2FEDEAC2.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\Footsteps\Footsteps_Snow\sfx_Player_Step_Snow_4		55244
+	364425919	sfx_step_cement_5	E:\Github\Projects\test-unity-wwise-01\test-01\test-01_WwiseProject\.cache\Windows\SFX\Boots on cement\5_5A86A261.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\Footsteps\Footsteps_Cement\sfx_step_cement_5		34068
+	457165176	sfx_Player_Landing_Snow_01	E:\Github\Projects\test-unity-wwise-01\test-01\test-01_WwiseProject\.cache\Windows\SFX\Landing on Snow\sfx_Player_Landing_Snow_01_72AE9BAC.wem		\Actor-Mixer Hierarchy\Default Work Unit\Landing\Landing\Landing on Snow\sfx_Player_Landing_Snow_01		72092
+	507470412	sfx_Player_Landing_Snow_02	E:\Github\Projects\test-unity-wwise-01\test-01\test-01_WwiseProject\.cache\Windows\SFX\Landing on Snow\sfx_Player_Landing_Snow_02_27794C0F.wem		\Actor-Mixer Hierarchy\Default Work Unit\Landing\Landing\Landing on Snow\sfx_Player_Landing_Snow_02		64328
+	550675395	sfx_step_cement_1	E:\Github\Projects\test-unity-wwise-01\test-01\test-01_WwiseProject\.cache\Windows\SFX\Boots on cement\1_EB644E5C.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\Footsteps\Footsteps_Cement\sfx_step_cement_1		38716
 	560110634	sfx_water_box	E:\Github\Projects\test-unity-wwise-01\test-01\test-01_WwiseProject\.cache\Windows\SFX\11-01 Rivers And Streams, Brook_ADB90DBD.wem		\Actor-Mixer Hierarchy\Default Work Unit\Box\sfx_water_box		3710744
-	889937497	sfx_step_cement_6	E:\Github\Projects\test-unity-wwise-01\test-01\test-01_WwiseProject\.cache\Windows\SFX\Boots on cement\6_33080905.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\Footsteps_Cement\sfx_step_cement_6		32656
-	898366175	sfx_step_cement_2	E:\Github\Projects\test-unity-wwise-01\test-01\test-01_WwiseProject\.cache\Windows\SFX\Boots on cement\2_FAB0F983.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\Footsteps_Cement\sfx_step_cement_2		42264
-	1032969002	sfx_step_cement_4	E:\Github\Projects\test-unity-wwise-01\test-01\test-01_WwiseProject\.cache\Windows\SFX\Boots on cement\4_847429EE.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\Footsteps_Cement\sfx_step_cement_4		33400
-	1070801123	sfx_step_cement_3	E:\Github\Projects\test-unity-wwise-01\test-01\test-01_WwiseProject\.cache\Windows\SFX\Boots on cement\3_2F58EA34.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\Footsteps_Cement\sfx_step_cement_3		31884
+	560244626	sfx_Player_Step_Snow_2	E:\Github\Projects\test-unity-wwise-01\test-01\test-01_WwiseProject\.cache\Windows\SFX\Boots on Snow\sfx_Player_Step_Snow_2_0D82BF36.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\Footsteps\Footsteps_Snow\sfx_Player_Step_Snow_2		55244
+	662688635	sfx_Player_Step_Snow_1	E:\Github\Projects\test-unity-wwise-01\test-01\test-01_WwiseProject\.cache\Windows\SFX\Boots on Snow\sfx_Player_Step_Snow_1_D1E9AC30.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\Footsteps\Footsteps_Snow\sfx_Player_Step_Snow_1		65468
+	706856954	sfx_Player_Step_Snow_3	E:\Github\Projects\test-unity-wwise-01\test-01\test-01_WwiseProject\.cache\Windows\SFX\Boots on Snow\sfx_Player_Step_Snow_3_8EA0925D.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\Footsteps\Footsteps_Snow\sfx_Player_Step_Snow_3		58936
+	841126941	sfx_Landing_cement	E:\Github\Projects\test-unity-wwise-01\test-01\test-01_WwiseProject\.cache\Windows\SFX\sfx_Landing_cement_2591184C.wem		\Actor-Mixer Hierarchy\Default Work Unit\Landing\Landing\sfx_Landing_cement		46120
+	885012803	sfx_Player_Jump_01	E:\Github\Projects\test-unity-wwise-01\test-01\test-01_WwiseProject\.cache\Windows\SFX\sfx_Player_Jump_01_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Jumping\Jumps\sfx_Player_Jump_01		81656
+	889937497	sfx_step_cement_6	E:\Github\Projects\test-unity-wwise-01\test-01\test-01_WwiseProject\.cache\Windows\SFX\Boots on cement\6_2A2D6280.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\Footsteps\Footsteps_Cement\sfx_step_cement_6		32656
+	898366175	sfx_step_cement_2	E:\Github\Projects\test-unity-wwise-01\test-01\test-01_WwiseProject\.cache\Windows\SFX\Boots on cement\2_C00110AC.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\Footsteps\Footsteps_Cement\sfx_step_cement_2		42264
+	955351840	sfx_Player_Jump_02	E:\Github\Projects\test-unity-wwise-01\test-01\test-01_WwiseProject\.cache\Windows\SFX\sfx_Player_Jump_02_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Jumping\Jumps\sfx_Player_Jump_02		81656
+	1032969002	sfx_step_cement_4	E:\Github\Projects\test-unity-wwise-01\test-01\test-01_WwiseProject\.cache\Windows\SFX\Boots on cement\4_209F99AD.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\Footsteps\Footsteps_Cement\sfx_step_cement_4		33400
+	1070801123	sfx_step_cement_3	E:\Github\Projects\test-unity-wwise-01\test-01\test-01_WwiseProject\.cache\Windows\SFX\Boots on cement\3_A840EB65.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\Footsteps\Footsteps_Cement\sfx_step_cement_3		31884
 
