@@ -5,7 +5,9 @@
 			<ChildrenList>
 				<SoundBank Name="Main" ID="{DAC60EFE-39D6-4CE8-B791-B4CCD9C58047}">
 					<ObjectInclusionList>
-						<ObjectRef Name="Play_11_01_Rivers_And_Streams__Brook" ID="{EEA20FED-E0FE-41A1-996D-7D911D5E56C7}" WorkUnitID="{D22A44AB-C5D4-434C-878A-7B18E20860A2}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_Footsteps_cement" ID="{AABCB4E4-37A3-4137-9CB4-745CA3785FEC}" WorkUnitID="{D22A44AB-C5D4-434C-878A-7B18E20860A2}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_sfx_water_box" ID="{EEA20FED-E0FE-41A1-996D-7D911D5E56C7}" WorkUnitID="{D22A44AB-C5D4-434C-878A-7B18E20860A2}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Stop_sfx_water_box" ID="{C0C81678-44E5-4F36-A8A5-E9DEA7ECC1C7}" WorkUnitID="{D22A44AB-C5D4-434C-878A-7B18E20860A2}" Origin="Manual" Filter="7"/>
 					</ObjectInclusionList>
 					<ObjectExclusionList/>
 					<GameSyncExclusionList/>

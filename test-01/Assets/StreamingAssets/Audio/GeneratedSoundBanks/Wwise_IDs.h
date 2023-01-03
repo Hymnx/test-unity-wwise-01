@@ -13,7 +13,9 @@ namespace AK
 {
     namespace EVENTS
     {
-        static const AkUniqueID PLAY_11_01_RIVERS_AND_STREAMS__BROOK = 1253004383U;
+        static const AkUniqueID PLAY_FOOTSTEPS_CEMENT = 3116569186U;
+        static const AkUniqueID PLAY_SFX_WATER_BOX = 3289425441U;
+        static const AkUniqueID STOP_SFX_WATER_BOX = 999815867U;
     } // namespace EVENTS
 
     namespace BANKS

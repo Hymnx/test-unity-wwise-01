@@ -66,7 +66,7 @@ MonoBehaviour:
     ParentPath: SoundBanks\Default Work Unit
     guid: 16f939b5f34acb40a4a03aee370d8ffa
     GuidInternal: 
-    m_lastTime: -8585288878487137653
+    m_lastTime: -8585288819417451488
     List:
     - name: Main
       guid: fe0ec6dad639e84cb791b4ccd9c58047
@@ -94,11 +94,11 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: ab442ad2d4c54c43878a7b18e20860a2
     GuidInternal: 
-    m_lastTime: -8585288878487097642
+    m_lastTime: -8585288818804246056
     List:
-    - name: Play_11_01_Rivers_And_Streams__Brook
+    - name: Play_sfx_water_box
       guid: ed0fa2eefee0a141996d7d911d5e56c7
-      id: 1253004383
+      id: 3289425441
       PathAndIcons:
       - ElementName: Events
         ObjectType: 5
@@ -106,10 +106,27 @@ MonoBehaviour:
       - ElementName: Default Work Unit
         ObjectType: 12
         guid: ab442ad2d4c54c43878a7b18e20860a2
-      - ElementName: Play_11_01_Rivers_And_Streams__Brook
+      - ElementName: Play_sfx_water_box
         ObjectType: 3
         guid: ed0fa2eefee0a141996d7d911d5e56c7
-      Path: Events\Default Work Unit\Play_11_01_Rivers_And_Streams__Brook
+      Path: Events\Default Work Unit\Play_sfx_water_box
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Stop_sfx_water_box
+      guid: 7816c8c0e544364fa8a5e9dea7ecc1c7
+      id: 999815867
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: ab442ad2d4c54c43878a7b18e20860a2
+      - ElementName: Stop_sfx_water_box
+        ObjectType: 3
+        guid: 7816c8c0e544364fa8a5e9dea7ecc1c7
+      Path: Events\Default Work Unit\Stop_sfx_water_box
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
@@ -170,7 +187,7 @@ MonoBehaviour:
     m_lastTime: -8585289181400704454
     List: []
   ExpandedFileSystemItemIds: 
-  ExpandedWaapiItemIds: 06000000070000000a0000000b0000000c000000
+  ExpandedWaapiItemIds: 0100000006000000070000000a0000000b0000000c000000
   AutoSyncSelection: 0
   autoPopulateEnabled: 1
   currentDataSource: 0

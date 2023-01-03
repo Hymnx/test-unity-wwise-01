@@ -3,17 +3,50 @@
 	<Events>
 		<WorkUnit Name="Default Work Unit" ID="{D22A44AB-C5D4-434C-878A-7B18E20860A2}" PersistMode="Standalone">
 			<ChildrenList>
-				<Event Name="Play_11_01_Rivers_And_Streams__Brook" ID="{EEA20FED-E0FE-41A1-996D-7D911D5E56C7}">
+				<Folder Name="Box" ID="{20FC3618-262D-4200-A563-04BB86D34B81}" ShortID="741829956">
 					<ChildrenList>
-						<Action Name="" ID="{8292FBD9-060D-428B-8E0A-BD6C1F381164}" ShortID="900326454">
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="11-01 Rivers And Streams, Brook" ID="{107B28B4-A4D2-4661-9F5A-96B3BBABB2FF}" WorkUnitID="{C877165D-FAF3-4B1E-8101-E9258901A088}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
+						<Event Name="Play_sfx_water_box" ID="{EEA20FED-E0FE-41A1-996D-7D911D5E56C7}">
+							<ChildrenList>
+								<Action Name="" ID="{8292FBD9-060D-428B-8E0A-BD6C1F381164}" ShortID="900326454">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="sfx_water_box" ID="{107B28B4-A4D2-4661-9F5A-96B3BBABB2FF}" WorkUnitID="{C877165D-FAF3-4B1E-8101-E9258901A088}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Stop_sfx_water_box" ID="{C0C81678-44E5-4F36-A8A5-E9DEA7ECC1C7}">
+							<ChildrenList>
+								<Action Name="" ID="{AA00028C-45F6-4BE7-BF67-2A427527B6EF}" ShortID="1037152175">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="2"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="sfx_water_box" ID="{107B28B4-A4D2-4661-9F5A-96B3BBABB2FF}" WorkUnitID="{C877165D-FAF3-4B1E-8101-E9258901A088}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
 					</ChildrenList>
-				</Event>
+				</Folder>
+				<Folder Name="Footsteps" ID="{307147C8-6BC9-4652-961C-56FFA6D1D87A}" ShortID="696928655">
+					<ChildrenList>
+						<Event Name="Play_Footsteps_cement" ID="{AABCB4E4-37A3-4137-9CB4-745CA3785FEC}">
+							<ChildrenList>
+								<Action Name="" ID="{E737E3BB-B03E-4252-924E-C1395D5CE3AF}" ShortID="592937325">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Footsteps_Cement" ID="{A9783D5C-C732-407B-B222-73796D4B296B}" WorkUnitID="{C877165D-FAF3-4B1E-8101-E9258901A088}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+					</ChildrenList>
+				</Folder>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

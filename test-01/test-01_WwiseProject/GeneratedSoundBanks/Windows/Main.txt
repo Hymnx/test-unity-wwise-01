@@ -1,6 +1,17 @@
 Event	ID	Name			Wwise Object Path	Notes
-	1253004383	Play_11_01_Rivers_And_Streams__Brook			\Default Work Unit\Play_11_01_Rivers_And_Streams__Brook	
+	999815867	Stop_sfx_water_box			\Default Work Unit\Box\Stop_sfx_water_box	
+	3116569186	Play_Footsteps_cement			\Default Work Unit\Footsteps\Play_Footsteps_cement	
+	3289425441	Play_sfx_water_box			\Default Work Unit\Box\Play_sfx_water_box	
+
+Effect plug-ins	ID	Name	Type				Notes
+	611330617	Parametric EQ (Custom)	Wwise Parametric EQ			
 
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
-	560110634	11-01 Rivers And Streams, Brook	E:\Github\Projects\test-unity-wwise-01\test-01\test-01_WwiseProject\.cache\Windows\SFX\11-01 Rivers And Streams, Brook_ADB90DBD.wem		\Actor-Mixer Hierarchy\Default Work Unit\11-01 Rivers And Streams, Brook		3710744
+	364425919	sfx_step_cement_5	E:\Github\Projects\test-unity-wwise-01\test-01\test-01_WwiseProject\.cache\Windows\SFX\Boots on cement\5_3B2BB30E.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\Footsteps_Cement\sfx_step_cement_5		34068
+	550675395	sfx_step_cement_1	E:\Github\Projects\test-unity-wwise-01\test-01\test-01_WwiseProject\.cache\Windows\SFX\Boots on cement\1_A96072E8.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\Footsteps_Cement\sfx_step_cement_1		38716
+	560110634	sfx_water_box	E:\Github\Projects\test-unity-wwise-01\test-01\test-01_WwiseProject\.cache\Windows\SFX\11-01 Rivers And Streams, Brook_ADB90DBD.wem		\Actor-Mixer Hierarchy\Default Work Unit\Box\sfx_water_box		3710744
+	889937497	sfx_step_cement_6	E:\Github\Projects\test-unity-wwise-01\test-01\test-01_WwiseProject\.cache\Windows\SFX\Boots on cement\6_33080905.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\Footsteps_Cement\sfx_step_cement_6		32656
+	898366175	sfx_step_cement_2	E:\Github\Projects\test-unity-wwise-01\test-01\test-01_WwiseProject\.cache\Windows\SFX\Boots on cement\2_FAB0F983.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\Footsteps_Cement\sfx_step_cement_2		42264
+	1032969002	sfx_step_cement_4	E:\Github\Projects\test-unity-wwise-01\test-01\test-01_WwiseProject\.cache\Windows\SFX\Boots on cement\4_847429EE.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\Footsteps_Cement\sfx_step_cement_4		33400
+	1070801123	sfx_step_cement_3	E:\Github\Projects\test-unity-wwise-01\test-01\test-01_WwiseProject\.cache\Windows\SFX\Boots on cement\3_2F58EA34.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\Footsteps_Cement\sfx_step_cement_3		31884
 

@@ -9,7 +9,7 @@
 	</RootPaths>
 	<DialogueEvents/>
 	<SoundBanks>
-		<SoundBank Id="1355168291" Type="User" Language="SFX" Hash="{986487A9-2683-E47A-8688-3D0FE6FDB954}">
+		<SoundBank Id="1355168291" Type="User" Language="SFX" Hash="{4B35675E-A660-276F-5A47-E7E26E92F585}">
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 			<Plugins>
@@ -22,23 +22,68 @@
 				<Bus Id="3803692087" Name="Master Audio Bus"/>
 			</Busses>
 		</SoundBank>
-		<SoundBank Id="3161908922" Type="User" Language="SFX" Hash="{6C8AFC2D-6AB5-5E06-9433-87517E9912BC}">
+		<SoundBank Id="3161908922" Type="User" Language="SFX" Hash="{8867EBEB-C6E6-1D38-C655-2A9BF04056AD}">
 			<ShortName>Main</ShortName>
 			<Path>Main.bnk</Path>
 			<Media>
+				<File Id="364425919" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Boots on cement\5.wav</ShortName>
+					<CachePath>SFX/Boots on cement/5_3B2BB30E.wem</CachePath>
+				</File>
+				<File Id="550675395" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Boots on cement\1.wav</ShortName>
+					<CachePath>SFX/Boots on cement/1_A96072E8.wem</CachePath>
+				</File>
 				<File Id="560110634" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>11-01 Rivers And Streams, Brook.wav</ShortName>
 					<CachePath>SFX/11-01 Rivers And Streams, Brook_ADB90DBD.wem</CachePath>
 				</File>
+				<File Id="889937497" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Boots on cement\6.wav</ShortName>
+					<CachePath>SFX/Boots on cement/6_33080905.wem</CachePath>
+				</File>
+				<File Id="898366175" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Boots on cement\2.wav</ShortName>
+					<CachePath>SFX/Boots on cement/2_FAB0F983.wem</CachePath>
+				</File>
+				<File Id="1032969002" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Boots on cement\4.wav</ShortName>
+					<CachePath>SFX/Boots on cement/4_847429EE.wem</CachePath>
+				</File>
+				<File Id="1070801123" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Boots on cement\3.wav</ShortName>
+					<CachePath>SFX/Boots on cement/3_2F58EA34.wem</CachePath>
+				</File>
 			</Media>
+			<Plugins>
+				<Custom>
+					<Plugin Id="611330617" Name="Parametric EQ (Custom)" LibName="Wwise Parametric EQ" LibId="6881283"/>
+				</Custom>
+			</Plugins>
 			<Events>
-				<Event Id="1253004383" Name="Play_11_01_Rivers_And_Streams__Brook" MaxAttenuation="20" DurationType="Infinite">
+				<Event Id="3116569186" Name="Play_Footsteps_cement" DurationType="OneShot" DurationMin="0.17168936" DurationMax="0.24949053">
+					<MediaRefs>
+						<MediaRef Id="364425919"/>
+						<MediaRef Id="550675395"/>
+						<MediaRef Id="889937497"/>
+						<MediaRef Id="898366175"/>
+						<MediaRef Id="1032969002"/>
+						<MediaRef Id="1070801123"/>
+					</MediaRefs>
+					<PluginRefs>
+						<Custom>
+							<PluginRef Id="611330617"/>
+						</Custom>
+					</PluginRefs>
+				</Event>
+				<Event Id="3289425441" Name="Play_sfx_water_box" MaxAttenuation="9" DurationType="Infinite">
 					<MediaRefs>
 						<MediaRef Id="560110634"/>
 					</MediaRefs>
 				</Event>
+				<Event Id="999815867" Name="Stop_sfx_water_box" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
 			</Events>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{826B74D6-A92D-93A7-970E-A151ADD88A88}</FileHash>
+	<FileHash>{0409F971-24B3-4D18-4FA7-E6776031BC90}</FileHash>
 </SoundBanksInfo>
